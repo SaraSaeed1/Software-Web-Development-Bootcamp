@@ -70,5 +70,5 @@ def printInfo(dojo):
         print(len(dojo[x]), x.upper())
         for i in dojo[x]:
             print(i)
-
-print (printInfo(dojo))
+        print("")
+printInfo(dojo)
