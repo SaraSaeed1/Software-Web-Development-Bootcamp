@@ -6,7 +6,7 @@
 
 In the last assignment, your code might have looked something like this:
 
-```
+```md
 guido.make_deposit(100)
 guido.make_deposit(200)
 guido.make_deposit(300)
@@ -17,7 +17,7 @@ guido.display_user_balance()
 
 This takes up a lot of space and we're repeating our call to guido many times. There is a way to call on guido just once and keep attaching new method calls to the end of the previous one, like so:
 
-```
+```md
 guido.make_deposit(100).make_deposit(200).make_deposit(300).make_withdrawal(50).display_user_balance()
 ```
 
@@ -32,4 +32,4 @@ class User:
 ```
 The practice of having OOP return its own instance is pretty common and is done in other programming languages, though the variable name in some languages is not ```self```, but instead ```this```.
 
-Update your previous assignment so that each instance's methods are chained
+- [x] Update your previous assignment so that each instance's methods are chained
