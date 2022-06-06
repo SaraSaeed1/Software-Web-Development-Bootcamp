@@ -1,4 +1,4 @@
-### Chaining Methods
+# Chaining Methods
 
 **Objectives:**
 
