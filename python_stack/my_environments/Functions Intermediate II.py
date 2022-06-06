@@ -66,12 +66,9 @@ dojo = {
     'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
 }
 def printInfo(dojo):
-        
     for x in dojo:
-        # print(str(len.dojo[0]) , dojo[0] )
-        print(x)
-print(str(len(dojo['locations'])) + ' locations')
-printInfo(dojo['locations'])
-print("\n")
-print(str(len(dojo['instructors'])) + ' instructors')
-printInfo(dojo['instructors'])
+        print(len(dojo[x]), x.upper())
+        for i in dojo[x]:
+            print(i)
+
+print (printInfo(dojo))
