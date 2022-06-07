@@ -20,18 +20,22 @@ class BankAccount:
         print (f"Current {self.name}, Balance:${self.account_balance }")
         return self
 
+    def display_account_info(self):
+        print (f"Current {self.name} Balance:${self.account_balance }")
+        return self
+
     def yield_interest(self):
         self.account_balance *= (1+self.rate)
         return self
 
 #create instances of class BankAccount
-check = BankAccount('check',0.002)
-save = BankAccount('save',balance=1000)
+Sara = BankAccount('Sara',0.002)
+Njd = BankAccount('Njd',balance=1000)
 
 #print beginning balances
-print(f"Beginning Checking Balance: {check.account_balance}")
-print(f"Beginning Savings Balance: {save.account_balance}")
+print(f"Frit Sara Balance: {Sara.account_balance}")
+print(f"Frit Njd Balance: {Njd.account_balance}")
 
 #deposit/withdraw/yield interest/display account info
-check.deposit(50).deposit(50).deposit(50).withdraw(100).yield_interest().display_account_info()
-save.deposit(200).deposit(200).withdraw(20).withdraw(10).withdraw(20).withdraw(10).yield_interest().display_account_info()
+Sara.deposit(100).deposit(50).deposit(50).withdraw(100).yield_interest().display_account_info()
+Njd.deposit(200).deposit(200).withdraw(20).withdraw(10).withdraw(20).withdraw(10).yield_interest().display_account_info()
