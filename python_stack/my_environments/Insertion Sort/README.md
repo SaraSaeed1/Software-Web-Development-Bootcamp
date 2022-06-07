@@ -5,7 +5,7 @@
 #
 Build an algorithm for insertion sort. Please watch the video here to understand how insertion sort works and implement the code. Basically, this sort works by starting at index 1, shifting that value to the left until it is sorted relative to all values to the left, and then moving on to the next index position and performing the same shifts until the end of the list is reached. The following animation also shows how insertion sort is done.
 
-![] (Insertion-sort-example.gif)
+![](Insertion-sort-example.gif)
 
 **Some Tips!**
 Don't forget to write your plan in a non-programming language first (pseudocode!) and test your base cases before you build your code.
