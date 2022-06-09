@@ -1,10 +1,15 @@
 .main{
     display: flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
 }
 
 .box{
-    height: 400px;
-    width: 400px;
-    background-color: blue;
+    height: 200px;
+    width: 200px;
+    background-color: lightskyblue;
+    background-color:{{_color}};
+}
+
+h1{
+    text-align: center;
 }
