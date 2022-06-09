@@ -1,0 +1,10 @@
+.main{
+    display: flex;
+    justify-content:space-between;
+}
+
+.box{
+    height: 400px;
+    width: 400px;
+    background-color: blue;
+}
