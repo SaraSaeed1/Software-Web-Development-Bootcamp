@@ -11,10 +11,10 @@
 
 ### Internal Styling
 
-Just for this assignment, use an internal stylesheet or inline CSS (urt = "https://www.w3schools.com/css/css_howto.asp" review here).
+Just for this assignment, use an internal stylesheet or inline CSS The [review here](https://www.w3schools.com/css/css_howto.asp).
 
 ### Level 1
-When a user visits http:**//localhost:5000/play**, have it render three beautiful looking blue boxes. Please use a template to render this. ![](playground1.png)
+When a user visits http:**//localhost:5000/play**, have it render three beautiful looking blue boxes. Please use a template to render this. ![](static/playground1.png)
 
 ### Level 2
 When a user visits localhost:**5000/play/(x)**, have it display the beautiful looking blue boxes x times. For example, localhost:5000/play/7 should display these blue boxes 7 times. Calling localhost:5000/play/35 would display these blue boxes 35 times. Please remember that x originally is a string, and if you want to use it as an integer, you must first convert it to integer using int(). For example int("7") returns 7. 
