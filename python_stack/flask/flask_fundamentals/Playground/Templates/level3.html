@@ -4,24 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+
     <title>Level 3 </title>
 </head>
-<style>
-    .main{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:space-evenly;
-    }
-    .box{
-        height: 200px;
-        width: 200px;
-        margin: 10px;
-        background-color:{{_color}};
-    }
-</style>
-
 <body>
-    
+    <h1>Welcome!</h1>
     <div class="main">
         {%for i in range(_num)%}
             <div class="box"></div>
