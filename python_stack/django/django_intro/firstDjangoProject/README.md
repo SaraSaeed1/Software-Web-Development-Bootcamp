@@ -1,4 +1,6 @@
 ### First Django Project
+<br/>
+
 **Objectives:**
 
 - Practice setting up a new Django project
