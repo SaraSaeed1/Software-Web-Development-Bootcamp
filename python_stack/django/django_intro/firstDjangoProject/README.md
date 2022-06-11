@@ -12,7 +12,7 @@ It's time to practice routing! Use the checklist below to add routes to your pro
 
 ***Bonus*** result:
 
-![](Screen_Shot_2020-06-23_at_4.06.38_PM.png)
+![](img.png)
 
 - [x] Create a new project with a single app
 
