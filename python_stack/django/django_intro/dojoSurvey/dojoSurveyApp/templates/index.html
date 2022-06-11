@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment: Dojo Survey</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+</head>
+<body>
+
+    <form class="form" action="/result", method="post">
+        {% csrf_token %}
+
+        <table >
+            <tr>
+                <td>Your Name: </td>
+                <td><input id="name" type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td>Please select your age:</td>
+                <td>
+                    <label name = "age"  >
+                        <input required type="radio" id="age1" name="age" value="0 - 30">
+                        <label>0 - 30</label><br>
+                        <input required type="radio" id="age2" name="age" value="31 - 60">
+                        <label>31 - 60</label><br>  
+                        <input required type="radio" id="age3" name="age" value="61 - 100">
+                        <label>61 - 100</label>
+                    </label>
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <td>Dojo Location:</td>
+                <td>
+                    <select name="location" >
+                        <option value="seattle">Seattle</option>
+                        <option value="chicago">Chicago</option>
+                        <option value="losAngeles">Los Angeles</option>
+                        <option value="sanJose">San Jose</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Favorite Language:</td>
+                <td>
+                    <select name="language" >
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="javaScript">JavaScript</option>
+                        <option value="c++">C++</option>
+                        <option value="c#">C#</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Another website to learn programming:</td>
+                <td>
+                    <label name = "websiteLearn" >
+                        <input type="checkbox" id = "" name="websiteLearn" value="YouTube">
+                        <label> YouTube</label><br>
+                        <input type="checkbox" id = "" name="websiteLearn" value="Udemy">
+                        <label> Udemy</label><br>
+                        <input type="checkbox" id = "" name="websiteLearn" value="Satr">
+                        <label> Satr</label><br>
+                        <input type="checkbox" id = "" name="websiteLearn" value="Flex Courses">
+                        <label> Flex Courses</label><br>
+                        <input type="checkbox" id = "" name="websiteLearn" value="Only Coding Dojo">
+                        <label> Only Coding Dojo</label><br>
+                    </label>
+                </td>
+            </tr>
+            </table>
+
+        Comment(optional): <br><br>
+        <textarea name="comment" rows="4" cols="50"></textarea>
+        <br>
+
+        <input class="submit" type="submit" value="Submit">
+    </form>
+</body>
+</html>
