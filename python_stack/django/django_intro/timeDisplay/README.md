@@ -39,9 +39,10 @@ Recognize that working with time -[ especially timezones](https://docs.djangopro
 
 - [x] NINJA BONUS: Come up with a different way to retrieve the datetime
 
+<br/>
 
 
- My Solution:
+ ### My Solution:
 
 <img src="https://github.com/SaraSaeed1/Software-Web-Development-Bootcamp/blob/main/python_stack/django/django_intro/timeDisplay/img-time.png" height=400px width=800px>
 
