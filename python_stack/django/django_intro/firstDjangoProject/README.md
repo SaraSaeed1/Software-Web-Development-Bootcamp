@@ -1,5 +1,5 @@
-# First Django Project
-### Objectives:
+### First Django Project
+**Objectives:**
 
 - Practice setting up a new Django project
 - Practice setting up a new Django app
@@ -30,4 +30,4 @@ It's time to practice routing! Use the checklist below to add routes to your pro
 
 - [x] /blogs/< number >/delete - redirect to the "/blogs" route with a method called "destroy"
 
-- [x] (* * Bonus * *) /blogs/json - return a JsonResponse with title and content keys.
+- [x] (**Bonus**) /blogs/json - return a JsonResponse with title and content keys.
