@@ -10,7 +10,7 @@ def index(request):
 def res (request):
     res = ""
     if request.POST['guess']:
-        _random = request.session['rand']= random.randint(1, 2)
+        _random = request.session['rand']= random.randint(0,100)
         _number = request.session['guess']= int(request.POST['guess'])
         _button = request.session['button'] = False
         # print(f"random{_random}| num{_number}"
