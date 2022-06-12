@@ -7,13 +7,13 @@ import random 	                # import the random module
 def index(request):
     return render(request, "index.html")
 
-def res (request):
+def root (request):
     res = ""
     if request.POST['guess']:
-        _random = request.session['rand']= random.randint(0,100)
+        _random = request.session['rand']= random.randint(0, 100)
         _number = request.session['guess']= int(request.POST['guess'])
         _button = request.session['button'] = False
-        # print(f"random{_random}| num{_number}"
+        print(f"random{_random}| num{_number}")
 
         if (_random > _number):
             res = str(_number )+ " Too Low!!"
@@ -28,7 +28,7 @@ def res (request):
             "res" : res,
             "button" : _button
         }
-
+        
     else:
         resDont= " You dont write anything"
         context={
