@@ -22,15 +22,10 @@
     height: 200px;
     width: 100%;
     border: 2px solid;
+    overflow-y: scroll;
 }
 #gold{
     border: 2px solid;
-}
-.red{
-    color: red;
-}
-.green{
-    color: green;
 }
 a{
     text-align: center;
