@@ -87,4 +87,4 @@ Then, in the respective blogs and surveys app urls.py files, we only need to inc
 
 - [x] Complete the /users route
 
-NINJA BONUS: Have the root route utilize the same method as the /blogs route
+- [ ] NINJA BONUS: Have the root route utilize the same method as the /blogs route
