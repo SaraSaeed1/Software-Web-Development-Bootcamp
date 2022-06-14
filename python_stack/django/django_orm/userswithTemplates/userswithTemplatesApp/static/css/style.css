@@ -1,0 +1,36 @@
+.main{
+    margin: 0% auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.newUser{
+        border-collapse: collapse;
+        width: 70%;
+        border: 2px solid;
+}
+.newUser th, td {
+        text-align: left;
+        padding: 8px;
+}
+.newUser tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.add-user{
+    border-top: 2px solid;
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#btn-add{
+    width: 10%;
+    height: 30px;
+    background-color: lavenderblush;
+    box-shadow: 10px 10px 10px lightgray;
+}
