@@ -1,11 +1,3 @@
-(base) saraalgamdi@MacBook-Pro-sarh single_model_orm % cd ..               
-(base) saraalgamdi@MacBook-Pro-sarh django_orm % cd ..               
-(base) saraalgamdi@MacBook-Pro-sarh django % cd ..
-(base) saraalgamdi@MacBook-Pro-sarh python_stack % cd my_environments                                   
-(base) saraalgamdi@MacBook-Pro-sarh my_environments % source djangoPy3Env/bin/activate
-(djangoPy3Env) (base) saraalgamdi@MacBook-Pro-sarh my_environments % cd ..
-(djangoPy3Env) (base) saraalgamdi@MacBook-Pro-sarh python_stack % cd django/django_orm          
-(djangoPy3Env) (base) saraalgamdi@MacBook-Pro-sarh django_orm % cd single_model_orm/
 (djangoPy3Env) (base) saraalgamdi@MacBook-Pro-sarh single_model_orm % python manage.py makemigrations
 Migrations for 'users_app':
   users_app/migrations/0001_initial.py
