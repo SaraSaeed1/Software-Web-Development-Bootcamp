@@ -8,6 +8,8 @@ The shell practice in the previous assignment allowed us to focus just on the Mo
 <br>
 
 Working with the same Users project and app from the previous assignment, add a route that renders a template that looks something like this:
+<br>
+
 ![](CR_Users_(Django).png)
 
 
