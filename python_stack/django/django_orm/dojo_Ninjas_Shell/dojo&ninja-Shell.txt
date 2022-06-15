@@ -1,0 +1,48 @@
+
+source djangoPy3Env/bin/activate
+python manage.py makemigrations
+python manage.py migrate
+python manage.py shell
+from dojo_ninjas_app.models import *
+
+ Dojos.objects.create(name='dojo1',city='US',state='NewYork')
+Dojos.objects.create(name='dojo2',city='US',state='Alabama')
+Dojos.objects.create(name='dojo3',city='US',state='Alaska')
+
+x= Dojos.objects.get(id=1)
+X.delete()
+
+x= Dojos.objects.get(id=2)
+X.delete()
+
+x= Dojos.objects.get(id=2)
+X.delete()
+
+Dojos.objects.create(name='dojo1',city='US',state='NewYork')
+Dojos.objects.create(name='dojo2',city='US',state='Alabama')
+Dojos.objects.create(name='dojo3',city='US',state='Alaska')
+
+Ninjas.objects.create(first_name='Sara',last_name='Alghamdi',dojo_id=Dojos.objects.get(id=4))
+Ninjas.objects.create(first_name='Omar',last_name='Alghamdi',dojo_id=Dojos.objects.get(id=4))
+Ninjas.objects.create(first_name='Abrar',last_name='Alghamdi',dojo_id=Dojos.objects.get(id=4))
+
+Ninjas.objects.create(first_name='Aziza',last_name='Alshahrani',dojo_id=Dojos.objects.get(id=5))
+Ninjas.objects.create(first_name='Ali',last_name='Alshahrani',dojo_id=Dojos.objects.get(id=5))
+Ninjas.objects.create(first_name='Khalid',last_name='Alshahrani',dojo_id=Dojos.objects.get(id=5))
+
+Ninjas.objects.create(first_name='Roaa',last_name='Albishri',dojo_id=Dojos.objects.get(id=6))
+Ninjas.objects.create(first_name='Ebrahem',last_name='Albishri',dojo_id=Dojos.objects.get(id=6))
+Ninjas.objects.create(first_name='Faris',last_name='Albishri',dojo_id=Dojos.objects.get(id=6))
+
+Ninjas.objects.filter(dojo_id=Dojos.objects.first())
+Ninjas.objects.filter(dojo_id=Dojos.objects.last())
+Ninjas.objects.last()
+ 
+exit()
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py shell
+from dojo_ninjas_app.models import *
+
+Dojos.objects.create(name='last dojo',city='U.S',state='Florida',desc='new dojo')
