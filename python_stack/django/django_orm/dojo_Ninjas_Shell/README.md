@@ -6,6 +6,7 @@
 - Practice one-to-many relationships
 Create a new project called dojo_ninjas_proj and an app called dojo_ninjas_app. For this project, use the following diagram as a guide for creating your models:
 <br>
+
 ![](dojo-erd.png)
 
 
