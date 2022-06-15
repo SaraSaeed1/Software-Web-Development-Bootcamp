@@ -10,6 +10,6 @@ class Dojos(models.Model):
     #     return f"name{self.name} | city {self.city} | state: {self.state} "
 
 class Ninjas(models.Model):
-    dojo_id= models.ForeignKey(Dojos,related_name='dojo', on_delete=models.CASCADE )
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
+    dojo_id= models.ForeignKey(Dojos,related_name='dojo', on_delete=models.CASCADE )
