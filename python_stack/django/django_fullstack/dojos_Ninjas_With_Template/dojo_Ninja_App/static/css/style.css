@@ -1,0 +1,50 @@
+.main{
+    margin: 2% auto;
+    width: 70%;
+    height: 600px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.617);
+    border-radius: 5px;
+}
+body{
+    background-image: url('img.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.top, .dojo , .ninja , form , .bottom{
+    display: flex;
+}
+.top{
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.dojo, .ninja,  form, .bottom{
+    flex-direction: column;
+    align-items: center;
+}
+.dojo , .ninja{
+    background-color: lavender;
+    height: 200px;
+    width: 400px;
+}
+.btn-add{
+    height: 30px;
+    width: 70px;
+    border-radius: 20px;
+    border: 2px solid lightpink;
+    background-color: white;
+}
+.btn-add:hover{
+    box-shadow: 4px 4px 10px lightcoral;
+}
+.name-dojo {
+    font-size: 20px;
+}
+.name-ninja{
+    font-size: 15px ;
+}
+.bottom{
+    height: 300px;
+    overflow-x: scroll;
+}
