@@ -22,4 +22,4 @@ Using the same project from the previous assignment, add a template and the nece
 
 - [x] NINJA BONUS: Add a delete button next to each dojo name that deletes that dojo (and all associated ninjas) from the database
 
-SENSEI BONUS: Add a count of ninjas next to each dojo name (eg. Ninjas at the Painting Dojo - 2; Ninjas at the Architecture Dojo - 0)
+- [ ] SENSEI BONUS: Add a count of ninjas next to each dojo name (eg. Ninjas at the Painting Dojo - 2; Ninjas at the Architecture Dojo - 0)
