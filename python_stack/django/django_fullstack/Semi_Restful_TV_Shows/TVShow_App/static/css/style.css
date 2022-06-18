@@ -1,0 +1,68 @@
+
+.nav{
+    float: right;
+}
+.main{
+    margin: 0% auto;
+    width: 70%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.create{
+    height: 300px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.create input{
+    display: flex;
+    align-items: center;
+}
+.create2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.create2 label{
+    width: 220px;
+}
+.create2 input{
+    width: 98%;
+}
+.create div{
+    width: 90%;
+}
+.input{
+    width: 99%;
+}
+textarea{
+    width: 99%;
+    height: 80px;
+}
+.table-show{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+.table-show th, td {
+    text-align: left;
+    padding: 8px;
+}
+.table-show tr:nth-child(even){
+    background-color: #f2f2f2
+}
+.table-show th {
+    background-color: #04AA6D;
+    color: white;
+}
+#link{
+    margin: 4% 0%;
+}
+.btn{
+    background-color: #04AA6D;
+    color: white;
+}
