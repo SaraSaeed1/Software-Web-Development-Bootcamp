@@ -59,8 +59,8 @@ Filter, on the other hand, returns a list, so if there is no user that matches, 
 
 - [ ] SENSEI BONUS: Add a birthday field and validate that the user is at least 13 years old (COPPA compliant!)
 
-- [ ]SENSEI BONUS: Validate the email uniqueness with AJAX
+- [ ] SENSEI BONUS: Validate the email uniqueness with AJAX
 
-- [ ]SENSEI BONUS: Use JavaScript to perform client-side validations
+- [ ] SENSEI BONUS: Use JavaScript to perform client-side validations
 
-- [ ]SENSEI BONUS: In addition to server side validations, use JavaScript to perform client-side validations on required fields. Don't allow the form to be submitted unless fields are valid.
+- [ ] SENSEI BONUS: In addition to server side validations, use JavaScript to perform client-side validations on required fields. Don't allow the form to be submitted unless fields are valid.
