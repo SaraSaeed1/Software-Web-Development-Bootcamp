@@ -6,9 +6,9 @@ def index(request):
 
     if 'Cart' not in request.session: #
         request.session['Cart'] = []
-    else:
-        del request.session['Cart']
-        print("DELETE!!")
+#     else:
+#         del request.session['Cart']
+#         print("DELETE!!")
 
     context = {
         "all_products": Product.objects.all()
