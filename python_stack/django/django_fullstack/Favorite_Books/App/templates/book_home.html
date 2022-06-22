@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css" integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+    <title>Favorite Books</title>
+</head>
+<body>
+
+    <nav class="navbar bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white">Welcome {{user.fname}} {{user.lname}}!</a>
+            <div class="d-flex">
+                <a href="logout" class="btn btn-outline-light">Log Out</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container bg-light ">
+        <div class="container d-flex justify-content-between bg-light p-5 " >
+            <form class="col-md-4" action="/add_book" method="post">
+                {% csrf_token %}
+                <h3 class="my-4 text-center " >Add a Favorite Book </h3>
+                    <div class="col my-4">
+                        <label class="form-label"> Title:</label>
+                        <input name="title" type="text" class="form-control" >
+                    </div>
+                    <div class="col">
+                        <label class="form-label"> Description:</label>
+                        <textarea name="desc" type="text" class="form-control" required></textarea>
+                    </div>
+                <button type="submit" class="btn btn-primary my-4 ">Add</button>
+            </form>
+            <div class="col-md-4">
+                {% for m in messages %}
+                <small class="text-danger">
+                    <li>{{m}}</li></small>
+                {% endfor %} 
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="my-4" >All Books</h3>
+                {%for book in books%}
+                <div class="container mb-4 border p-2 bg-white">
+                    <a href="/{{book.id}}">{{book.title}}</a>
+                    <p>Added by {{book.uploaded_py.fname}} {{book.uploaded_py.lname}}</p>
+                    {% if user in book.user_who_like.all%}
+                    <p>this is one of your favorites</p>
+                    {%else%}
+                    <a class="badge bg-warning text-wrap "  href="/favorite/{{book.id}}">Add to Favorites</a>
+                    {%endif%}
+                </div>
+                {%endfor%}
+            </div>
+        </div>
+        </div>
+        
+</body>
+</html>

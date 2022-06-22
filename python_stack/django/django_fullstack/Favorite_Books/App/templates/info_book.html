@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css" integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+    <title>Information Book {{book.id}}</title>
+</head>
+<body>
+    <nav class="navbar bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white">Welcome {{user.fname}} {{user.lname}}!</a>
+            <div class="d-flex">
+                <a href="/logout" class="btn btn-outline-light">Log Out</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container bg-light d-flex justify-content-between">
+        <div class="col-md-6 my-4">
+            <form action="/update/{{book.id}}" method="post">
+                {% csrf_token %}
+                {% if user.id == book.uploaded_py.id%}
+                <input class="form-control" name="title" value="{{book.title}}">
+                {%else%}
+                <p>{{book.title}}</p>
+                {%endif%}
+                <p>Added by: {{book.uploaded_py.fname}} {{book.uploaded_py.lname}}</p>
+                <p>Added on: {{book.created_at}}</p>
+                <p>Last updated on: {{book.updated_at}}</p>
+                {% if user.id == book.uploaded_py.id%}
+                <textarea class="form-control" name="desc" >{{book.desc}}</textarea>
+                <button type="submit" class="btn btn-outline-dark">Update</button>
+                <a href="/delete/{{book.id}}" class="btn btn-outline-danger">Delete</a>
+                {%else%}
+                <p>Description: {{desc.title}}</p>
+                {%endif%}
+            </form>
+        </div>
+        <div class="col-md-4 my-4">
+            <h5>Users Who Like This Book:</h5>
+            <ul>
+                {%for user in book.user_who_like.all %}
+                <li>{{user.fname}} {{user.lname}}</li>
+                {%endfor%}
+            </ul>
+            {%if user in book.user_who_like.all%}
+            <a class="badge bg-danger text-wrap " href="/un_favorite/{{book.id}}">Un-Favorite</a>
+            {%else%}
+            <a class="badge bg-warning text-wrap " href="/favorite/{{book.id}}">Add to Favorites</a>
+            {%endif%}
+        </div>
+    </div>
+
+</body>
+</html>
