@@ -20,7 +20,10 @@ Let's make a new and improved Cafe app! Separate from your prior Cafe projects, 
 - String name
 - double total
 - boolean ready
-- ArrayList<Item> items
+- ```ArrayList<Item> items```
+
+<br>
+
 Of course, you will also need to demo its capabilities for the dev team, so make another testing file ```TestOrders``` class, with a  ```main```  method to do this. Tip! When creating new instances don't forget the ```new``` keyword for instantiating objects!
 
 ```
