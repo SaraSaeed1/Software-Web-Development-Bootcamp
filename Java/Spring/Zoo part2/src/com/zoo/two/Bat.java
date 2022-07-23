@@ -7,19 +7,19 @@ public class Bat extends Mammal {
 	}
 	
 	public void fly() {
-		System.out.println("fly");
+		System.out.println("Bat is flying!");
 		energyLevel -=50;
 		displayEnergy();
 	}
 	
 	public void eatHumans() {
-		System.out.println("eatHumans");
+		System.out.println("so- well, never mind");
 		energyLevel +=25;
 		displayEnergy();
 	}
 	
 	public void attackTown() {
-		System.out.println("attackTown");
+		System.out.println("Bat is attacking town!");
 		energyLevel -=100;
 		displayEnergy();
 	}
