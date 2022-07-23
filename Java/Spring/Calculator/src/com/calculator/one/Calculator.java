@@ -2,10 +2,10 @@ package com.calculator.one;
 import java.util.Scanner;
 
 public class Calculator {
-	public double operandOne;
-	public String operation;
-	public double operandTwo;
-    public double result = 0;
+	private double operandOne;
+	private String operation;
+	private double operandTwo;
+	private double result = 0;
 
 	
 	public double getOperandOne() {
