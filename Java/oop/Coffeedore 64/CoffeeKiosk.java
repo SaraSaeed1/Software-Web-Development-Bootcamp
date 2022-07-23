@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 
-import javafx.scene.effect.Light.Spot;
 
 public class CoffeeKiosk{
     private ArrayList<Item> menu;
@@ -20,7 +19,7 @@ public class CoffeeKiosk{
 
     public void displayMenu(){
         for(int i=0;i<menu.size(); i++){
-            System.out.println(i+ " " + menu.get(i).getName() + " -- " + i+ " " + menu.get(i).getPrice());
+            System.out.println(i+ " " + menu.get(i).getName() + " -- " +" " + menu.get(i).getPrice());
         }
     }
 
@@ -29,6 +28,7 @@ public class CoffeeKiosk{
         System.out.println("Please enter customer name for new order:");
         String name = System.console().readLine();
 
+    	// Your code:
         // Create a new order with the given input string
         Order order = new Order();
         order.setName(name);
@@ -40,10 +40,11 @@ public class CoffeeKiosk{
         System.out.println("Please enter a menu item index or q to quit:");
         String itemNumber = System.console().readLine();
         int i = Integer.parseInt(itemNumber);
-
+        
         // Write a while loop to collect all user's order items
         while(!itemNumber.equals("q")) {
             // Get the item object from the menu, and add the item to the order
+            i = Integer.parseInt(itemNumber);
             Item item = menu.get(i);
             ArrayList<Item> orderItems = order.getItem();
             orderItems.add(item);
@@ -53,7 +54,7 @@ public class CoffeeKiosk{
         }
         
         // After you have collected their order, print the order details 
-        System.out.println(order.getName()+"orders details:");
+        System.out.println(order.getName()+" orders details:");
 
         for (Item item : order.getItem()){
             System.out.println(item.getName()+" "+item.getPrice());
