@@ -1,22 +1,26 @@
 package com.zookeeper.one;
 
 public class Gorilla extends Mammal {
+	int energyLevel= getEnergyLevel();
 	
 	public void throwSomething() {
 		System.out.println(" the gorilla has thrown something");
-		energyLevel -=5;
+		this.energyLevel -=5;
+		setEnergyLevel(energyLevel);
 		displayEnergy();
 	}
 	
 	public void eatBananas() {
 		System.out.println("Yammmmmme ");
-		energyLevel +=10;
+		this.energyLevel +=10;
+		setEnergyLevel(energyLevel);
 		displayEnergy();
 	}
 	
 	public void climb() {
 		System.out.println("the gorilla has climbed a tree ");
-		energyLevel -= 10;
+		this.energyLevel -= 10;
+		setEnergyLevel(energyLevel);
 		displayEnergy();
 	}
 
