@@ -12,5 +12,7 @@
 </head>
 <body>
     <h1 class="position-absolute top-50 start-50 translate-middle text-success" >Welcome User!!</h1>
+    <a type="button" class="btn btn-outline-success" href="/your_server/counter"> Go To Counter</a>
+
 </body>
 </html>
