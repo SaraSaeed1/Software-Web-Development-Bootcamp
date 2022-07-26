@@ -16,12 +16,7 @@
         <form class="mt-4" action="/send" method="post">
             <div>
                 <label for="num">Pick any number from 5 to 25</label>
-                <select id="cars" name="num">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                </select>
+                <input type="number" name="num" min="5" max="25">
             </div>
             <div class="mb-3">
                 <label for="city" class="form-label">Enter the name of any city</label>
