@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <div class="mt-4 text-center mb-4">
-            <h4 class="text-dark" >You have visited <a href="/your_server/increment2">http://your_server</a> <c:out value="${count}"/></h4>
+            <h4 class="text-dark" >You have visited <a href="/your_server">http://your_server</a> <c:out value="${count}"/></h4>
         </div>
         <div class="d-flex justify-content-around">
             <a type="button" class="btn btn-outline-success" href="/your_server/counter"> Increment the counter by 1</a>
