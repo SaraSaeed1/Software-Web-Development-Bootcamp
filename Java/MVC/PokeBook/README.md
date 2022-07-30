@@ -77,7 +77,7 @@ The next step is to add in the ability to update their expenses.
 
 - [x] Make a task list for how to approach adding update functionality to this project.
 
-- [] Work with at least one other student at some point while completing this assignment.
+- [ ] Work with at least one other student at some point while completing this assignment.
 
 - [x] Keep a list of challenging aspects and specific bugs you fixed for future reference and to help others.
 
