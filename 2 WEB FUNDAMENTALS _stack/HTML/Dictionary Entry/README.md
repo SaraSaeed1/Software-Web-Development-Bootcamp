@@ -18,4 +18,4 @@ We may need to use some of the following _HTML_ tags:
 - `ol`
 - `li`
 
-You can download an image of the pronunciation [here](pronunciation.png).
+You can download an image of the pronunciation [here](https://github.com/SaraSaeed1/Software-Web-Development-Bootcamp/blob/main/2%20WEB%20FUNDAMENTALS%20_stack/HTML/Dictionary%20Entry/nin.png).
