@@ -1,0 +1,36 @@
+.Header{
+    background-color: #6aa84f;
+    border: solid black;
+    height: 100px;
+}
+
+.Navigation{
+    background-color: #6fa8dc;
+    border: solid black;
+    height: 350px;
+    width: 16%;
+}
+
+.Main{
+    padding: 20px;
+    background-color: #e06666;
+    border: solid black;
+    height: 400px;
+    width: 75%;
+}
+
+.SubContents{
+    height: 270px;
+    width: 30%;
+    background-color: #ffd966;
+    border: solid black;
+}
+
+.Advertisement{
+    margin-top: 20px;
+    height: 100px;
+    width: 100%;
+    background-color: #b4a7d6;
+    display: inline-block;
+    border: solid black;
+}
