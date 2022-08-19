@@ -67,11 +67,11 @@ const UserForm = (props) => {
                     </tr>
                     <tr>
                         <th>Password</th>
-                        <td>password</td>
+                        <td>{password}</td>
                     </tr>
                     <tr>
                         <th>Confirm Password</th>
-                        <td>password</td>
+                        <td>{cpassword}</td>
                     </tr>
                 </tbody>
             </table>
