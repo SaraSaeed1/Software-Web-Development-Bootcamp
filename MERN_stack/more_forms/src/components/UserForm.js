@@ -52,7 +52,7 @@ const UserForm = (props) => {
         if(e.target.value.length < 1){
             setPasswordError("Password is required!");
         }
-        else if(e.target.value.length < 5) {
+        else if(e.target.value.length < 8) {
             setPasswordError("Password must be at least 8 characters");
         }else{
             setPasswordError("")
@@ -121,3 +121,4 @@ const UserForm = (props) => {
     );
 }
 export default UserForm;
+
