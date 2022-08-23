@@ -35,17 +35,23 @@ export default ()=> {
         const { name, value } = e.target;//set to the opj
         let error = null; //by Deflate is null
         if(name == "firstName"){
-            if(value.length<3){
+            if(value.length == 0){
+                error= null
+            }else  if(value.length<3){
                 error="The First name Must be at least 3"
             }
         }
         if(name == "lastName"){
-            if(value.length<3){
+            if(value.length==0){
+                error= null
+            }else if(value.length<3){
                 error="The Last name Must be at least 3"
             }
         }
         if(name == "email"){
-            if(value.length<5){
+            if(value.length==0){
+                error= null
+            }else if(value.length<5){
                 error="The Last email Must be at least 5"
             }
         }
