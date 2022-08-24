@@ -11,7 +11,7 @@ const Pokemon = () => {
     
     return (
         <div>
-            <button type="button" className="btn btn-outline-primary mt-4 mb-4" onClick={add} >Catch! </button>
+            <button type="button" className="btn btn-outline-primary mt-4 mb-4" onClick={add} >Fetch Pokemon </button>
                 {people.map((item,index)=>{
                     return(
                         <div key={index}>
