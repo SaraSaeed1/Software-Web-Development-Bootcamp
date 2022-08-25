@@ -22,6 +22,8 @@ Hint: use the ``isNaN`` method (is Not a Number). For example: ``isNaN(+"35")`` 
 
 
 - [x] Create localhost:3000/hello/blue/red: This should display the word "hello" in blue text with a red background. It should work with any other valid word and colors
+
+# 
 To use the code
 - create a new react app called ``routingpractice`` 
 
@@ -29,5 +31,5 @@ To use the code
 npx create-react-app routingpractice
 ```
 
-and then replace the ``src`` folder with [this folder]() 
+and then replace the ``src`` folder with [this folder](https://github.com/SaraSaeed1/Software-Web-Development-Bootcamp/tree/main/MERN_stack/React/Routing%20Practice/src) 
 
