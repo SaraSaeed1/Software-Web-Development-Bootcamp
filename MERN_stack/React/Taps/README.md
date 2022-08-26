@@ -16,3 +16,17 @@ Develop a tabs component that will take in an array of items. Each item will hav
 - [ ] Ninja Bonus: Add some CSS animations to the tab switching to smooth out the user experience.
 
 - [ ] Sensei Bonus: Add a JavaScript animation to the tab switching action.
+
+#
+
+To use the code
+- create a new react app called ``tabs `` 
+
+```
+npx create-react-app tabs
+```
+
+and then replace the ``src`` folder with [this folder](https://github.com/SaraSaeed1/Software-Web-Development-Bootcamp/tree/main/MERN_stack/React/Taps/src) 
+
+
+
