@@ -37,7 +37,7 @@ The faker library has a ton of methods we can use to populate specific fields wi
 
 **Here is an example of how we can use faker**
 
-``m
+```m
 class Product {
   constructor() {
     this.name = faker.commerce.productName();
